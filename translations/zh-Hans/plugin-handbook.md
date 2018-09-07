@@ -1,4 +1,9 @@
-# Babel 插件手册1
+<style>
+  .code {
+    font-size: 100% !important;
+  }
+</style>
+# Babel 插件手册
 
 这篇文档涵盖了如何创建 [Babel](https://babeljs.io) [插件](https://babeljs.io/docs/advanced/plugins/)等方面的内容。.
 
@@ -1482,14 +1487,14 @@ FunctionDeclaration(path) {
 
 ### <a id="toc-replacing-a-parent"></a>替换父节点
 
-只需使用parentPath：` path.parentPath </>调用<code> replaceWith </>即可</p>
+只需使用parentPath：` path.parentPath` </>调用<code> replaceWith </>即可</p>
 
 <pre><code class="js">BinaryExpression(path) {
   path.parentPath.replaceWith(
     t.expressionStatement(t.stringLiteral("Anyway the wind blows, doesn't really matter to me, to me."))
   );
 }
-`</pre> 
+</pre> 
 
 ```diff
   function square(n) {
