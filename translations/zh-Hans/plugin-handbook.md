@@ -1,8 +1,3 @@
-<style>
-  .code {
-    font-size: 100% !important;
-  }
-</style>
 # Babel 插件手册
 
 这篇文档涵盖了如何创建 [Babel](https://babeljs.io) [插件](https://babeljs.io/docs/advanced/plugins/)等方面的内容。.
